@@ -1,8 +1,7 @@
--- telescope
-vim.keymap.set("n", "<leader>fs", ":Telescope find_files<cr>")
-vim.keymap.set("n", "<leader>fp", ":Telescope git_files<cr>")
-vim.keymap.set("n", "<leader>fz", ":Telescope live_grep<cr>")
-vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<cr>")
+-- fzf lua
+vim.keymap.set("n", "<leader>fs", ":FzfLua files<cr>")
+vim.keymap.set("n", "<leader>fz", ":FzfLua live_grep<cr>")
+vim.keymap.set("n", "<leader>fo", ":FzfLua oldfiles<cr>")
 
 -- tree
 vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")

@@ -19,11 +19,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- my plugins
-
-    -- colorschema
-    { "catppuccin/nvim", as = "catppuccin" },
-    -- {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
-    {'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = {'nvim-lua/plenary.nvim'}},
+    {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
+    {"ibhagwan/fzf-lua", dependencies = { "nvim-tree/nvim-web-devicons" },opts = {}},
     {"nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = {"nvim-tree/nvim-web-devicons"},
        config = function()
        require("nvim-tree").setup {}
