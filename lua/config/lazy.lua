@@ -21,6 +21,7 @@ require("lazy").setup({
     -- my plugins
     {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
     {"ibhagwan/fzf-lua", dependencies = { "nvim-tree/nvim-web-devicons" },opts = {}},
+    {'stevearc/oil.nvim', opts = {}, dependencies = { { "echasnovski/mini.icons", opts = {} } }, lazy = false,},
     {"nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = {"nvim-tree/nvim-web-devicons"},
        config = function()
        require("nvim-tree").setup {}
