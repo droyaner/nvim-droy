@@ -19,7 +19,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- my plugins
-    {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}},
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     {"ibhagwan/fzf-lua", dependencies = { "nvim-tree/nvim-web-devicons" },opts = {}},
     {'stevearc/oil.nvim', opts = {}, dependencies = { { "echasnovski/mini.icons", opts = {} } }, lazy = false,},
     {"nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = {"nvim-tree/nvim-web-devicons"},

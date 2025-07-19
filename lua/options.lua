@@ -30,3 +30,16 @@ vim.o.softtabstop = 4
 
 -- Number of spaces inserted when indenting
 vim.o.shiftwidth = 4
+
+-- Show spaces
+vim.opt.list = true
+
+-- Darstellung der Zeichen konfigurieren
+vim.opt.listchars = {
+  space = "·",
+  tab = "▸ ",
+  trail = "·",
+  extends = ">",
+  precedes = "<",
+  nbsp = "␣"
+}
